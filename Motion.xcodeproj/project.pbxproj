@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0009682B1396912200216597 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0009682A1396912200216597 /* UIKit.framework */; };
+		0009682D1396912200216597 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0009682C1396912200216597 /* Foundation.framework */; };
+		0009682F1396912200216597 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0009682E1396912200216597 /* CoreGraphics.framework */; };
+		000968351396912200216597 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000968331396912200216597 /* InfoPlist.strings */; };
+		000968381396912200216597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000968371396912200216597 /* main.m */; };
+		0009683B1396912200216597 /* MotionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009683A1396912200216597 /* MotionAppDelegate.m */; };
+		0009683E1396912200216597 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0009683C1396912200216597 /* MainWindow.xib */; };
+		000968411396912200216597 /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000968401396912200216597 /* MotionViewController.m */; };
+		000968441396912200216597 /* MotionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000968421396912200216597 /* MotionViewController.xib */; };
+		0009684B1396913D00216597 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0009684A1396913D00216597 /* CoreMotion.framework */; };
+		DFA8A72E16D368630083EC08 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFA8A72D16D368630083EC08 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000968261396912200216597 /* Motion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0009682A1396912200216597 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0009682C1396912200216597 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0009682E1396912200216597 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		000968321396912200216597 /* Motion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Motion-Info.plist"; sourceTree = "<group>"; };
+		000968341396912200216597 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		000968361396912200216597 /* Motion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Motion-Prefix.pch"; sourceTree = "<group>"; };
+		000968371396912200216597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		000968391396912200216597 /* MotionAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionAppDelegate.h; sourceTree = "<group>"; };
+		0009683A1396912200216597 /* MotionAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionAppDelegate.m; sourceTree = "<group>"; };
+		0009683D1396912200216597 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0009683F1396912200216597 /* MotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		000968401396912200216597 /* MotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		000968431396912200216597 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MotionViewController.xib; sourceTree = "<group>"; };
+		0009684A1396913D00216597 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DFA8A72D16D368630083EC08 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000968231396912200216597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0009684B1396913D00216597 /* CoreMotion.framework in Frameworks */,
+				0009682B1396912200216597 /* UIKit.framework in Frameworks */,
+				0009682D1396912200216597 /* Foundation.framework in Frameworks */,
+				0009682F1396912200216597 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0009681B1396912200216597 = {
+			isa = PBXGroup;
+			children = (
+				DFA8A72D16D368630083EC08 /* Default-568h@2x.png */,
+				000968301396912200216597 /* Motion */,
+				000968291396912200216597 /* Frameworks */,
+				000968271396912200216597 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000968271396912200216597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000968261396912200216597 /* Motion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000968291396912200216597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0009684A1396913D00216597 /* CoreMotion.framework */,
+				0009682A1396912200216597 /* UIKit.framework */,
+				0009682C1396912200216597 /* Foundation.framework */,
+				0009682E1396912200216597 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000968301396912200216597 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				000968391396912200216597 /* MotionAppDelegate.h */,
+				0009683A1396912200216597 /* MotionAppDelegate.m */,
+				0009683C1396912200216597 /* MainWindow.xib */,
+				0009683F1396912200216597 /* MotionViewController.h */,
+				000968401396912200216597 /* MotionViewController.m */,
+				000968421396912200216597 /* MotionViewController.xib */,
+				000968311396912200216597 /* Supporting Files */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
+		000968311396912200216597 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				000968321396912200216597 /* Motion-Info.plist */,
+				000968331396912200216597 /* InfoPlist.strings */,
+				000968361396912200216597 /* Motion-Prefix.pch */,
+				000968371396912200216597 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000968251396912200216597 /* Motion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000968471396912200216597 /* Build configuration list for PBXNativeTarget "Motion" */;
+			buildPhases = (
+				000968221396912200216597 /* Sources */,
+				000968231396912200216597 /* Frameworks */,
+				000968241396912200216597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Motion;
+			productName = Motion;
+			productReference = 000968261396912200216597 /* Motion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0009681D1396912200216597 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Exeter";
+			};
+			buildConfigurationList = 000968201396912200216597 /* Build configuration list for PBXProject "Motion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0009681B1396912200216597;
+			productRefGroup = 000968271396912200216597 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000968251396912200216597 /* Motion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000968241396912200216597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000968351396912200216597 /* InfoPlist.strings in Resources */,
+				0009683E1396912200216597 /* MainWindow.xib in Resources */,
+				000968441396912200216597 /* MotionViewController.xib in Resources */,
+				DFA8A72E16D368630083EC08 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000968221396912200216597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000968381396912200216597 /* main.m in Sources */,
+				0009683B1396912200216597 /* MotionAppDelegate.m in Sources */,
+				000968411396912200216597 /* MotionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		000968331396912200216597 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000968341396912200216597 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0009683C1396912200216597 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0009683D1396912200216597 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		000968421396912200216597 /* MotionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000968431396912200216597 /* en */,
+			);
+			name = MotionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000968451396912200216597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		000968461396912200216597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		000968481396912200216597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Motion/Motion-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Motion/Motion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		000968491396912200216597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Motion/Motion-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Motion/Motion-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000968201396912200216597 /* Build configuration list for PBXProject "Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000968451396912200216597 /* Debug */,
+				000968461396912200216597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000968471396912200216597 /* Build configuration list for PBXNativeTarget "Motion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000968481396912200216597 /* Debug */,
+				000968491396912200216597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0009681D1396912200216597 /* Project object */;
+}

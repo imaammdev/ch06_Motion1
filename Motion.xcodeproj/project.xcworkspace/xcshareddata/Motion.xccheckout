@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B46EEAC5-9DDE-4421-AC31-8F8F92D6DDE5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Motion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3D18B000-9CDA-4F80-B6CD-14B45F979E54</key>
+		<string>https://prod.oreilly.com/external/authors/books/9781449308469/current/code</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ch06_Motion/Motion.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3D18B000-9CDA-4F80-B6CD-14B45F979E54</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>3D18B000-9CDA-4F80-B6CD-14B45F979E54</key>
+		<string>https://prod.oreilly.com</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://prod.oreilly.com/external/authors/books/9781449308469/current/code/ch06_Motion/Motion.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3D18B000-9CDA-4F80-B6CD-14B45F979E54</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3D18B000-9CDA-4F80-B6CD-14B45F979E54</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BasiciOSSensorApps</string>
+		</dict>
+	</array>
+</dict>
+</plist>
