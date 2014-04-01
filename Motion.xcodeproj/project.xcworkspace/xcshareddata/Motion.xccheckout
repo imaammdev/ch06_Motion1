@@ -5,13 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B46EEAC5-9DDE-4421-AC31-8F8F92D6DDE5</string>
+	<string>9467E685-D8CC-4103-A8B0-EFC1354082DD</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Motion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3D18B000-9CDA-4F80-B6CD-14B45F979E54</key>
 		<string>https://prod.oreilly.com/external/authors/books/9781449308469/current/code</string>
+		<key>F7280167-2C30-4E81-86D2-D7B3AC787C38</key>
+		<string>https://github.com/imaammdev/ch06_Motion1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ch06_Motion/Motion.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>3D18B000-9CDA-4F80-B6CD-14B45F979E54</key>
 		<string>../../..</string>
+		<key>F7280167-2C30-4E81-86D2-D7B3AC787C38</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
@@ -26,7 +30,7 @@
 		<string>https://prod.oreilly.com</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://prod.oreilly.com/external/authors/books/9781449308469/current/code/ch06_Motion/Motion.xcodeproj</string>
+	<string>https://github.com/imaammdev/ch06_Motion1.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -40,6 +44,14 @@
 			<string>3D18B000-9CDA-4F80-B6CD-14B45F979E54</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BasiciOSSensorApps</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F7280167-2C30-4E81-86D2-D7B3AC787C38</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ch06_Motion1</string>
 		</dict>
 	</array>
 </dict>

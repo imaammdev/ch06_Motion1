@@ -9,9 +9,12 @@
 #import "MotionViewController.h"
 
 float rotX = 0.00f, oldX = 0.00f, rotY = 0.00f, rotZ = 0.00f;
-float oldZ = 0.00f, oldY = 0.00f, jumrotX = 0.00f , jumoldX = 0.00f;
+float oldZ = 0.00f, oldY = 0.00f, jumrotX = 0.00f , jumoldX = 0.00f, totxyz;
+float datax1,datax2,datax3, datay1 = 0,datay2 = 0,datay3,dataz1,dataz2,dataz3;
+
+
 int stateID = 0;
-int flag = 1;
+int flag = 0;
 char *stateIDstr = "---Stop---";
 char *stateIDstr2 = "STOP";
 
@@ -67,91 +70,71 @@ int indexLoop = 0,indexLoop2 = 0;
     rotasiY.text = [NSString stringWithFormat:@"%2.2f",rotate.y];
     rotasiZ.text = [NSString stringWithFormat:@"%2.2f",rotate.z];
     
-    rotX += ABS(rotate.x-oldX)*10;
-    rotZ += ABS(rotate.z-oldZ)*10;
-    rotY += ABS(rotate.y-oldY)*10;
-    jumrotX += (userAcceleration.z-jumoldX)*10;
-    
-    
-    
+    rotX += ABS(rotate.x-oldX)*100;
+    rotZ += ABS(rotate.z-oldZ)*100;
+    rotY += ABS(rotate.y-oldY)*100;
+    jumrotX += (userAcceleration.z-jumoldX)*100;
         
     indexLoop += 1;
+    
+    if (indexLoop <= 3) {
+        //datax1 = userAcceleration.x * 1000;
+        datay1 = datay1+(userAcceleration.y * 1000);
+        //dataz1 = userAcceleration.z * 1000;
         
-    if (indexLoop==3) // 6
-    {
-        float totXYZ = rotX+rotZ+rotY;
+    }else if(indexLoop <= 6){
+        //datax2 = userAcceleration.x * 1000;
+        datay2 = datay2+(userAcceleration.y * 1000);
+        //dataz2 = userAcceleration.z * 1000;
+    }
+    
+    if (indexLoop == 6) {
+        totxyz = rotX + rotY + rotZ;
+        total.text = [NSString stringWithFormat:@"%2.2f", totxyz];
         
-        indexLoop2 += 1;
-        
-        if (totXYZ>47)
-        {
+        if ((rotX > rotY) && (totxyz >250) ) {
+            stateIDstr = "Rotate";
+            stateID = 1;
+            stateIDstr2 = "";
             
+        }else if ((rotY > rotZ) && (totxyz > 100)){
+            stateIDstr = "Walking";
             stateID = 2;
-            stateIDstr = "--Rotate--";
-            indexLoop2 = 0;
-        }
-        else if (totXYZ>14)
-        {
-            if (jumrotX < 0.1) {
-                if (flag == 1) {
-                    stateID = 1;
-                    flag = 2;
-                }
-            }else{
-                if (flag == 1) {
-                    stateID = 1;
-                    flag = 3;
+            
+            if (stateID != flag) {
+                if (datay2 < datay1) {
+                    stateIDstr2 = "Mundur";
+                }else{
+                    stateIDstr2 = "Maju";
                 }
             }
             
-            stateIDstr = "--Walking--";
-
-        }
-        else
-        {
-            stateID = 0;
-             stateIDstr = "---Stop---";
-            flag = 1;
-            jumoldX = 0.00f;
-        }
-        
-        NSLog(@"%f",jumrotX);
-        
-        total.text = [NSString stringWithFormat:@"%2.2f",jumrotX];
             
-        rotX = 0.0;
-        rotZ = 0.0;
-        rotY = 0.0;
-        indexLoop = 0;
+            
+        }else{
+            stateIDstr = "Stop";
+            stateID = 3;
+            stateIDstr2 = "";
+        }
         
+        indexLoop = 0;
+        rotX = 0;
+        rotY = 0;
+        rotZ = 0;
+        datay1 = 0;
+        datay2 = 0;
+        flag = stateID;
     }
     
-    
-    if ((stateID<=1) && (flag==2))
-    {
-        stateIDstr2 = "Maju";
-
-    }
-    else if((stateID<=1) && (flag==3))
-    {
-        stateIDstr2 = "Mundur";
-    }else{
-        stateIDstr2 = "";
-    }
-    
-    oldX = rotate.x;
-    oldY = rotate.y;
-    oldZ = rotate.z;
-    
-    jumoldX = userAcceleration.z;
-
+ 
+        
     
     rotState.text = [NSString stringWithFormat:@"%s",stateIDstr];
     stateidr2.text = [NSString stringWithFormat:@"%s",stateIDstr2];
     
-    rotLabelX.text = [NSString stringWithFormat:@"%2.2f",rotX];
-    rotLabelY.text = [NSString stringWithFormat:@"%2.2f",rotY];
-    rotLabelZ.text = [NSString stringWithFormat:@"%2.2f",rotZ];
+    rotLabelX.text = [NSString stringWithFormat:@"%2.2f",userAcceleration.x * 1000];
+    rotLabelY.text = [NSString stringWithFormat:@"%2.2f",userAcceleration.y * 1000];
+    rotLabelZ.text = [NSString stringWithFormat:@"%2.2f",userAcceleration.z * 1000];
     
 }
 
@@ -198,10 +181,10 @@ int indexLoop = 0,indexLoop2 = 0;
     [super viewDidLoad];
     
     motionManager = [[CMMotionManager alloc] init];
-    motionManager.deviceMotionUpdateInterval =  1.0 / 30.0;
+    motionManager.deviceMotionUpdateInterval =  1.0 / 60.0;
     [motionManager startDeviceMotionUpdates];
     if (motionManager.deviceMotionAvailable ) {
-        timer = [NSTimer scheduledTimerWithTimeInterval:0.2f target:self selector:@selector(updateView:) userInfo:nil repeats:YES];
+        timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(updateView:) userInfo:nil repeats:YES];
     } else {
         [motionManager stopDeviceMotionUpdates];
         [motionManager release];
